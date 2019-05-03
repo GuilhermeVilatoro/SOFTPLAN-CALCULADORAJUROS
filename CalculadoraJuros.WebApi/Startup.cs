@@ -1,6 +1,6 @@
 ﻿using CalculadoraJuros.Infra.CrossCutting.IOC;
 using CalculadoraJuros.WebApi.Configurations;
-using Livraria.WebApi.Extensions;
+using CalculadoraJuros.WebApi.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

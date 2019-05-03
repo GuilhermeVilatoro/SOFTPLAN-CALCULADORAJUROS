@@ -1,8 +1,9 @@
 ﻿using CalculadoraJuros.Application.Services.Interfaces;
 using CalculadoraJuros.Application.ViewModels;
+using CalculadoraJuros.Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Livraria.WebApi.Controllers
+namespace CalculadoraJuros.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -22,9 +23,15 @@ namespace Livraria.WebApi.Controllers
             if (!ModelState.IsValid)
                 return Response(calculaJurosViemModel);
 
-            var retorno = _calculoJurosService.Calcular(calculaJurosViemModel);
-
-            return Response(retorno.ToString());
+            try
+            {
+                var retorno = _calculoJurosService.Calcular(calculaJurosViemModel);
+                return Response(retorno.ToString("N2"));
+            }
+            catch (BusinessException ex)
+            {
+                return new ObjectResult($"Erro ao calcular juros: {ex.Message}");
+            }            
         }
     }
 }

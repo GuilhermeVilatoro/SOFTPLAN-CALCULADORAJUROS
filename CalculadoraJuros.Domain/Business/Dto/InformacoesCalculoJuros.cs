@@ -4,13 +4,13 @@
     {
         public InformacoesCalculoJuros()
         {
-            TaxaJuros = 1.01;
+            TaxaJuros = 1.01M;
         }
 
         public decimal ValorInicial { get; set; }
 
         public int TempoEmMeses { get; set; }
 
-        public double TaxaJuros { get; private set; }
+        public decimal TaxaJuros { get; private set; }
     }
 }

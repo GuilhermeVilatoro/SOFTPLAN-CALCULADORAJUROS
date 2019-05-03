@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace Livraria.WebApi.Extensions
+namespace CalculadoraJuros.WebApi.Extensions
 {
     public static class SwaggerServiceExtensions
     {

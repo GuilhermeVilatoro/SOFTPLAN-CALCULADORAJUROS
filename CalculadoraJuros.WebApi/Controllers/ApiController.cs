@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Livraria.WebApi.Controllers
+namespace CalculadoraJuros.WebApi.Controllers
 {
     public abstract class ApiController : ControllerBase
     {
