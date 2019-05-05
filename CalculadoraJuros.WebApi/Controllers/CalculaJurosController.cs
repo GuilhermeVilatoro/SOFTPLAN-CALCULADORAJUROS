@@ -24,7 +24,7 @@ namespace CalculadoraJuros.WebApi.Controllers
         /// <remarks>
         /// Exemplo request:
         ///
-        ///     GET /calculajuros?valorinicial=100&amp;meses=5 
+        ///     GET /calculajuros?valorinicial=100&amp;tempoemmeses=5 
         ///
         /// </remarks>
         /// <param name="calculaJurosViemModel">Contem o Valor inicial a ser aplicado juros e a Quantidade de meses a ser aplicado juros</param>        
