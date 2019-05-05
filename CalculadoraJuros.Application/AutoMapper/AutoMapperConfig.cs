@@ -11,5 +11,10 @@ namespace CalculadoraJuros.Application.AutoMapper
                 x.AddProfile<ViewModelToBusinessDtoMappingProfile>();
             });
         }
+
+        public static void ResetMappings()
+        {
+            Mapper.Reset();
+        }
     }
 }

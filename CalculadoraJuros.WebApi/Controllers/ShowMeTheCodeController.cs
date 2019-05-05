@@ -8,7 +8,17 @@ namespace CalculadoraJuros.WebApi.Controllers
     {
         private const string URLPROJETOGIT =  @"https://github.com/GuilhermeVilatoro/SOFTPLAN_CALCULADORAJUROS";
 
-        // GET: api/ShowMeTheCode
+        /// <summary>
+        /// Retorna a url de onde se encontra o fonte do projeto no GitHub
+        /// </summary>
+        /// <remarks>
+        /// Exemplo request:
+        ///
+        ///     GET /showmethecode 
+        ///
+        /// </remarks>
+        /// <returns>Url do código fonte no GitHub</returns>
+        /// <response code="200">Url do código fonte no GitHub</response>
         [HttpGet]
         public IActionResult GetShowMeTheCodeViewModel()
         {

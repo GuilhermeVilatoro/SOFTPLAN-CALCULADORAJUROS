@@ -13,17 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - UnitTests", "4 - UnitTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{1D945D57-D088-4891-9F8A-09D725650196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.Infra.CrossCutting", "CalculadoraJuros.Infra.CrossCutting\CalculadoraJuros.Infra.CrossCutting.csproj", "{B175C32F-374E-45B5-A529-B6219E4DD648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraJuros.Infra.CrossCutting", "CalculadoraJuros.Infra.CrossCutting\CalculadoraJuros.Infra.CrossCutting.csproj", "{B175C32F-374E-45B5-A529-B6219E4DD648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.Domain", "CalculadoraJuros.Domain\CalculadoraJuros.Domain.csproj", "{8DD73F55-A4E1-43C2-B57C-A1F42CE04FEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraJuros.Domain", "CalculadoraJuros.Domain\CalculadoraJuros.Domain.csproj", "{8DD73F55-A4E1-43C2-B57C-A1F42CE04FEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.Domain.UnitTests", "CalculadoraJuros.Domain.UnitTests\CalculadoraJuros.Domain.UnitTests.csproj", "{F0AEAF77-5EF2-4326-8937-FEA45BC6E035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraJuros.Domain.UnitTests", "CalculadoraJuros.Domain.UnitTests\CalculadoraJuros.Domain.UnitTests.csproj", "{F0AEAF77-5EF2-4326-8937-FEA45BC6E035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.WebApi", "CalculadoraJuros.WebApi\CalculadoraJuros.WebApi.csproj", "{25B290FF-4326-489D-93FE-95DAF0BE9394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraJuros.WebApi", "CalculadoraJuros.WebApi\CalculadoraJuros.WebApi.csproj", "{25B290FF-4326-489D-93FE-95DAF0BE9394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.Application", "CalculadoraJuros.Application\CalculadoraJuros.Application.csproj", "{0320448E-1229-45CC-ACFC-3A9439044565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraJuros.Application", "CalculadoraJuros.Application\CalculadoraJuros.Application.csproj", "{0320448E-1229-45CC-ACFC-3A9439044565}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - IntegrationTests", "5 - IntegrationTests", "{CF5DFF6A-243A-47E3-B4D0-5972A821D4A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJuros.WebApi.IntegrationTests", "CalculadoraJuros.WebApi.IntegrationTests\CalculadoraJuros.WebApi.IntegrationTests.csproj", "{14E8F865-3027-4FEB-BAB3-D85F4A5983D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0320448E-1229-45CC-ACFC-3A9439044565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0320448E-1229-45CC-ACFC-3A9439044565}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0320448E-1229-45CC-ACFC-3A9439044565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E8F865-3027-4FEB-BAB3-D85F4A5983D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E8F865-3027-4FEB-BAB3-D85F4A5983D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E8F865-3027-4FEB-BAB3-D85F4A5983D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E8F865-3027-4FEB-BAB3-D85F4A5983D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{F0AEAF77-5EF2-4326-8937-FEA45BC6E035} = {BF418761-CDEE-44F3-858B-BDE9878EAF09}
 		{25B290FF-4326-489D-93FE-95DAF0BE9394} = {80F722E4-BD49-4BD2-97F2-DBDC47EDDDA4}
 		{0320448E-1229-45CC-ACFC-3A9439044565} = {1D945D57-D088-4891-9F8A-09D725650196}
+		{14E8F865-3027-4FEB-BAB3-D85F4A5983D9} = {CF5DFF6A-243A-47E3-B4D0-5972A821D4A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9B51F39-3478-427E-B3F8-F87370A57EBC}

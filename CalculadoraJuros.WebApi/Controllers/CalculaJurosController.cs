@@ -16,7 +16,20 @@ namespace CalculadoraJuros.WebApi.Controllers
             _calculoJurosService = calculoJurosService;
         }
 
-        // POST: api/CalculaJuros
+        /// <summary>
+        /// Faz o cálculo de juros compostos em memória, conforme seguinte regra: 
+        /// Valor Final = Valor Inicial * (1 + juros) ^ Tempo.
+        ///  O juros aplicado será de 1%.
+        /// </summary>
+        /// <remarks>
+        /// Exemplo request:
+        ///
+        ///     GET /calculajuros?valorinicial=100&amp;meses=5 
+        ///
+        /// </remarks>
+        /// <param name="calculaJurosViemModel">Contem o Valor inicial a ser aplicado juros e a Quantidade de meses a ser aplicado juros</param>        
+        /// <returns>O resultado será o valor truncado do cálculo sem arredondamento, formatado com duas casas decimais.</returns>
+        /// <response code="200">O resultado será o valor truncado do cálculo sem arredondamento, formatado com duas casas decimais</response>
         [HttpPost]
         public IActionResult PostCalculaJurosViewModel(CalculaJurosViewModel calculaJurosViemModel)
         {
@@ -31,7 +44,7 @@ namespace CalculadoraJuros.WebApi.Controllers
             catch (BusinessException ex)
             {
                 return new ObjectResult($"Erro ao calcular juros: {ex.Message}");
-            }            
+            }
         }
     }
 }
